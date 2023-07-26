@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 퍼미션을 설정도 하지만, 주로 이용하는 편이라서, 위치 관련 권한 요청 -->
+    <!-- 위치 권한 요청을 아래에 2개를 세트로 구성했음. 이유는 체크성 오류가 발생하기 때문 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 추가 Notification 확인을 하려고 하니 API 13 이상부터는 시스템이 권한을 요구하여 자동설정. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.K230327_Android_Lab_Pra">
+        <activity
+            android:name=".test12.MainActivity378"
+            android:exported="true" />
+        <activity
+            android:name=".test12.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".test11.DrawerTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".test11.ViewPager2_Fragment_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".test11.ViewPager2_Recycle_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".test11.Recycle2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".test11.RecycleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".test11.FragTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".test11.JetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".test11.DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".test11.NotiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".test11.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
