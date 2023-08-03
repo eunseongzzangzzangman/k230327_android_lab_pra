@@ -12,7 +12,7 @@ class MyApplication: MultiDexApplication() {
     //dex => 코틀린으로 컴파일 할 때, 추가된 파일 구조
     //java -> class -> dex, jvm, ART(Android Run Time)
     companion object { // 클래스 변수로 사용하겠다라는 뜻, 자바로 치면 static이랑 비슷함
-        //latainit 형식으로 선언이 되어 있어서, 현재 선언만 되었고,
+        //lateinit 형식으로 선언이 되어 있어서, 현재 선언만 되었고,
         //실제로 사용하려면, 초기화하는 로직이 반드시 필요함
         //아랫부분에 onCreate 함수에서 초기화를 진행 하고 있음
         lateinit var auth: FirebaseAuth
